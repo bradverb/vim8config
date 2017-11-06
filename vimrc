@@ -123,11 +123,6 @@ set pastetoggle=<F2>
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :NumbersOnOff<CR>
 
-"Toggle bg for solarized
-nmap <unique> <F5> <Plug>ToggleBackground
-imap <unique> <F5> <Plug>ToggleBackground
-vmap <unique> <F5> <Plug>ToggleBackground
-
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
   augroup redhat
