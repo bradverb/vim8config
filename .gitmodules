@@ -1,84 +1,84 @@
 [submodule "pack/bradverb/start/lightline.vim"]
 	path = pack/bradverb/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-colors-solarized"]
 	path = pack/bradverb/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/numbers.vim"]
 	path = pack/bradverb/start/numbers.vim
 	url = https://github.com/myusuf3/numbers.vim.git
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-startify"]
 	path = pack/bradverb/start/vim-startify
 	url = https://github.com/mhinz/vim-startify
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/nerdtree"]
 	path = pack/bradverb/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/nerdcommenter"]
 	path = pack/bradverb/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-endwise"]
 	path = pack/bradverb/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-surround"]
 	path = pack/bradverb/start/vim-surround
 	url = https://github.com/tpope/vim-surround
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-sensible"]
 	path = pack/bradverb/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/opt/vim-tbone"]
 	path = pack/bradverb/opt/vim-tbone
 	url = https://github.com/tpope/vim-tbone
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-repeat"]
 	path = pack/bradverb/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-better-whitespace"]
 	path = pack/bradverb/start/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-easymotion"]
 	path = pack/bradverb/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-unimpaired"]
 	path = pack/bradverb/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-fugitive"]
 	path = pack/bradverb/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-git"]
 	path = pack/bradverb/start/vim-git
 	url = https://github.com/tpope/vim-git
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/start/vim-markdown"]
 	path = pack/bradverb/start/vim-markdown
 	url = https://github.com/tpope/vim-markdown
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/opt/tagbar"]
 	path = pack/bradverb/opt/tagbar
 	url = https://github.com/majutsushi/tagbar
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/opt/vim-table-mode"]
 	path = pack/bradverb/opt/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/opt/delimitMate"]
 	path = pack/bradverb/opt/delimitMate
 	url = https://github.com/Raimondi/delimitMate
-	ignore = dirty
+	ignore = all
 [submodule "pack/bradverb/opt/auto-pairs"]
 	path = pack/bradverb/opt/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
-	ignore = dirty
+	ignore = all
