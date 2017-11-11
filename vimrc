@@ -24,9 +24,10 @@ set bs=indent,eol,start
 
 " Read/write a .viminfo file, don't store morethan 50 lines of registers
 set viminfo='100,<50
-
-" Keep 500 lines of command line history
 set history=500
+
+" Shorten update time for snappier git-gutter
+set updatetime=250
 
 " Status line/command line stuff
 set ruler
