@@ -82,3 +82,7 @@
 	path = pack/bradverb/opt/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
 	ignore = all
+[submodule "pack/bradverb/start/Nvim-R"]
+	path = pack/bradverb/start/Nvim-R
+	url = http://github.com/jalvesaq/Nvim-R
+	ignore = all
