@@ -85,3 +85,8 @@
 [submodule "pack/bradverb/start/vim-gitgutter"]
 	path = pack/bradverb/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+	ignore = all
+[submodule "pack/bradverb/start/vim-rsi"]
+	path = pack/bradverb/start/vim-rsi
+	url = http://github.com/tpope/vim-rsi
+	ignore = all
