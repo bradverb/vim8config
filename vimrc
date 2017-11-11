@@ -3,14 +3,14 @@
 set nocompatible
 
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
-   set fileencodings=utf-8,latin1
+    set fileencodings=utf-8,latin1
 endif
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
+    syntax on
+    set hlsearch
 endif
 
 if &term=="xterm"
@@ -63,8 +63,9 @@ set mouse=a
 set expandtab
 set smarttab
 
-" Set Tab Sizes
-set shiftwidth=8
+" Set default Tab Sizes
+set shiftwidth=4
+set softtabstop=4
 set tabstop=8
 
 "Custom settings for python only
@@ -125,7 +126,7 @@ nnoremap <F4> :NumbersOnOff<CR>
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
-  augroup redhat
+    augroup redhat
     " In text files, always limit the width of text to 78 characters
     autocmd BufRead *.txt set tw=78
     " When editing a file, always jump to the last cursor position
@@ -133,36 +134,36 @@ if has("autocmd")
     \ if line("'\"") > 0 && line ("'\"") <= line("$") |
     \   exe "normal! g'\"" |
     \ endif
-  augroup END
+    augroup END
 endif
 
 if has("cscope") && filereadable("/usr/bin/cscope")
-   set csprg=/usr/bin/cscope
-   set csto=0
-   set cst
-   set nocsverb
-   " add any database in current directory
-   if filereadable("cscope.out")
+    set csprg=/usr/bin/cscope
+    set csto=0
+    set cst
+    set nocsverb
+    " add any database in current directory
+    if filereadable("cscope.out")
       cs add cscope.out
-   " else add database pointed to by environment
-   elseif $CSCOPE_DB != ""
+    " else add database pointed to by environment
+    elseif $CSCOPE_DB != ""
       cs add $CSCOPE_DB
-   endif
-   set csverb
+    endif
+    set csverb
 endif
 
 "##### Appearance #####
 " Lightline config
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head'
-      \ },
-      \ }
+    \ 'colorscheme': 'solarized',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'fugitive#head'
+    \ },
+    \ }
 
 " colorscheme
 let g:solarized_termcolors=256
