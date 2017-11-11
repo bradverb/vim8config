@@ -6,16 +6,18 @@ cd ~/<vim directory>
 git clone --recursive https://github.com/bradverb/vim8config .
 ```
 
-To update submodules/packages:  
+To update submodules/packages (first line required for first pull to new device):  
 ```
+git submodule init
 git submodule update --remote --merge
 git commit
 ```
 
-To add a new submodule:
+To add a new submodule (ignore = all recommended but not 100% necessary)
 ```
 git submodule add <package-repo> pack/bradverb/<start-OR-opt>/<package-name>
-git add .
+echo "        ignore = all" >> .gitmodules
+git add .gitmodules
 git commit -m "Added <package> to submodules"
 ```
 
