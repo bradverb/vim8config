@@ -82,3 +82,6 @@
 	path = pack/bradverb/opt/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
 	ignore = all
+[submodule "pack/bradverb/start/vim-gitgutter"]
+	path = pack/bradverb/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter

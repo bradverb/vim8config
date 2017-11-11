@@ -19,14 +19,11 @@ if &term=="xterm"
      set t_Sf=[3%dm
 endif
 
-" Use Vim defaults (much better!)
-set nocompatible
-
 " Allow backspacing over everything in insert mode
 set bs=indent,eol,start
 
 " Read/write a .viminfo file, don't store morethan 50 lines of registers
-set viminfo='20,\"50
+set viminfo='100,<50
 
 " Keep 500 lines of command line history
 set history=500
@@ -39,9 +36,6 @@ highlight LineNr ctermfg=7
 set showcmd
 set lazyredraw
 set laststatus=2
-" Must edit these two together if %f is removed
-" set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-" let g:smartusline_string_to_highlight = '%f'
 
 " Search modifications
 set ignorecase
@@ -57,23 +51,19 @@ filetype indent on
 
 " Enable mouse
 set mouse=a
-" Note that Shif+MiddleClick will paste from other applications
+" Note that Shift+MiddleClick will paste from other applications
 
-" Make tabs spaces and use smart tabs
+" Sensible default tab/indent settings
+set autoindent
+set smartindent
 set expandtab
 set smarttab
-
-" Set default Tab Sizes
 set shiftwidth=4
 set softtabstop=4
 set tabstop=8
 
 "Custom settings for python only
 autocmd Filetype python setlocal ts=8 et sw=4 sts=4
-
-" Smart/Auto Indents
-set ai
-set smartindent
 set wrap
 
 " Wildmenu makes command line completion have a pop up
@@ -90,6 +80,11 @@ set noerrorbells
 set visualbell
 set t_vb=
 set tm=500
+
+" Some settings for NERDCommenter
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDTrimTrailingWhitespace = 1
 
 " ##### Keyboard shortcuts / commands / functions #####
 " Set <leader> to comma for faster extra commands
