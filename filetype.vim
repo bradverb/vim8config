@@ -1419,7 +1419,7 @@ fun! s:FTr()
       let n = n + 1
     endwhile
     if n >= max
-      setf rexx
+      setf r
     endif
   endif
 endfun
