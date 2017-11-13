@@ -1409,6 +1409,7 @@ fun! s:FTr()
       " R has # comments
       if getline(n) =~ '^\s*#'
 	setf r
+        set sw=2 sts=2
 	break
       endif
       " Rexx has /* comments */
@@ -1420,6 +1421,7 @@ fun! s:FTr()
     endwhile
     if n >= max
       setf r
+      set sw=2 sts=2
     endif
   endif
 endfun
