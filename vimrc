@@ -114,11 +114,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 vnoremap <silent> * :call VisualSelection('f')<CR>
 vnoremap <silent> # :call VisualSelection('b')<CR>
 
-"Mappings for F-keys
-"Toggle line number style
+"Mappings for F-keys and related settings
 set pastetoggle=<F2>
+"Default to absolute line numbers, F3 to toggle to relative
+let g:enable_numbers = 0
 nnoremap <F3> :NumbersToggle<CR>
-nnoremap <F4> :NumbersOnOff<CR>
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
