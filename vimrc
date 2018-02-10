@@ -13,7 +13,7 @@ if &t_Co > 2 || has("gui_running")
     set hlsearch
 endif
 
-if &term=="xterm"
+if &term=="xterm" && &t_Co > 80
      set t_Co=256
      set t_Sb=[4%dm
      set t_Sf=[3%dm
@@ -162,10 +162,12 @@ let g:lightline = {
     \ }
 
 " colorscheme
-let g:solarized_termcolors=256
-syntax enable
-set background=dark
-colorscheme solarized
+if &t_Co >= 256
+    let g:solarized_termcolors=256
+    syntax enable
+    set background=dark
+    colorscheme solarized
+endif
 
 "##### Helper Functions #####
 function! CmdLine(str)
