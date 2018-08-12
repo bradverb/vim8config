@@ -27,7 +27,7 @@ vim -u NONE -c 'helptags <path/to/package>/doc' -c q
 ```
 To update all help tags in the pack folder (run as vim script):
 ```
-for d in split(globpath('~/vimfiles/pack/', '**/doc'), '\n')
+for d in split(globpath('<vim-directory>/pack/', '**/doc'), '\n')
         execute 'helptags ' . d
         echo 'Finished tagging ' . d
 endfor
