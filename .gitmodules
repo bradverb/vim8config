@@ -83,7 +83,7 @@
 	url = https://github.com/jiangmiao/auto-pairs
 	ignore = all
 [submodule "pack/bradverb/start/vim-gitgutter"]
-	path = pack/bradverb/start/vim-gitgutter
+	path = pack/bradverb/opt/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
 	ignore = all
 [submodule "pack/bradverb/start/vim-rsi"]
