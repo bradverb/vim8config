@@ -82,6 +82,11 @@ set visualbell
 set t_vb=
 set tm=500
 
+" Enable fzf if the directory is present in home dir
+if isdirectory($HOME . "/.fzf")
+    packadd! fzf-vim
+endif
+
 " Some settings for NERDCommenter
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1

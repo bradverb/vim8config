@@ -93,3 +93,7 @@
 	path = pack/bradverb/start/Nvim-R
 	url = https://github.com/jalvesaq/Nvim-R
 	ignore = all
+[submodule "pack/bradverb/opt/fzf-vim"]
+	path = pack/bradverb/opt/fzf-vim
+	url = https://github.com/junegunn/fzf.vim.git
+        ignore = all
