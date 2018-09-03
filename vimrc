@@ -13,7 +13,9 @@ if &t_Co > 2 || has("gui_running")
     set hlsearch
 endif
 
-if &term=="xterm"
+" Support 256 colors in xterm or screen (tmux)
+" Alias tmux='tmux -2' in .bashrc to force 256 colors
+if &term=="xterm" || &term=="screen"
      set t_Co=256
      set t_Sb=[4%dm
      set t_Sf=[3%dm
